@@ -1,0 +1,46 @@
+.botonera {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* Ajusta el espacio entre los botones según tus preferencias */
+    margin: 10px; /* Ajusta el margen según tus preferencias */
+  }
+  
+  button {
+    width: 150px; /* Ancho fijo - ajusta según tus necesidades */
+    height: 150px; /* Altura fija - ajusta según tus necesidades */
+    border: 2px solid #fff; /* Borde blanco */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    background-color: #3498db; /* Color de fondo azul - puedes cambiarlo para cada botón */
+    color: #fff; /* Color del texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición de color y escala al pasar el mouse */
+  
+    /* Estilo adicional al pasar el mouse */
+    :hover {
+      background-color: #2980b9; /* Nuevo color de fondo al pasar el mouse */
+      transform: scale(1.1); /* Escala ligeramente más grande al pasar el mouse */
+    }
+  
+    /* Estilo para el texto debajo del botón */
+    span {
+      display: block;
+      text-align: center;
+      margin-top: 5px; /* Espacio entre el botón y el texto */
+    }
+  }
+  
+  /* Estilos para las filas pares */
+  button:nth-child(2n) {
+    background-color: #e74c3c; /* Color de fondo rojo - puedes cambiarlo para cada botón en fila par */
+  }
+  
+  /* Estilos adicionales para resaltar el primer botón de cada fila */
+  button:nth-child(4n - 3) {
+    border-top-left-radius: 50%; /* Hace que la esquina superior izquierda sea redonda */
+  }
+  
+  /* Estilos adicionales para resaltar el último botón de cada fila */
+  button:nth-child(4n) {
+    border-top-right-radius: 50%; /* Hace que la esquina superior derecha sea redonda */
+  }
+  
