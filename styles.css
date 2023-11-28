@@ -1,46 +1,71 @@
 .botonera {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px; /* Ajusta el espacio entre los botones según tus preferencias */
-    margin: 10px; /* Ajusta el margen según tus preferencias */
-  }
-  
-  button {
-    width: 150px; /* Ancho fijo - ajusta según tus necesidades */
-    height: 150px; /* Altura fija - ajusta según tus necesidades */
-    border: 2px solid #fff; /* Borde blanco */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    background-color: #3498db; /* Color de fondo azul - puedes cambiarlo para cada botón */
-    color: #fff; /* Color del texto blanco */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; 
+    margin: 10px;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición de color y escala al pasar el mouse */
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px; 
+}
+
+.button:hover {
+    transform: scale(1.1); 
+}
   
-    /* Estilo adicional al pasar el mouse */
-    :hover {
-      background-color: #2980b9; /* Nuevo color de fondo al pasar el mouse */
-      transform: scale(1.1); /* Escala ligeramente más grande al pasar el mouse */
-    }
-  
-    /* Estilo para el texto debajo del botón */
-    span {
-      display: block;
-      text-align: center;
-      margin-top: 5px; /* Espacio entre el botón y el texto */
-    }
+
+  .button.plan-b {
+    background-color: #b21a8a; 
   }
   
-  /* Estilos para las filas pares */
-  button:nth-child(2n) {
-    background-color: #e74c3c; /* Color de fondo rojo - puedes cambiarlo para cada botón en fila par */
+  .button.historias-enfermeros {
+    background-color: rgb(64, 0, 214); 
   }
   
-  /* Estilos adicionales para resaltar el primer botón de cada fila */
-  button:nth-child(4n - 3) {
-    border-top-left-radius: 50%; /* Hace que la esquina superior izquierda sea redonda */
+  .button.ecotips {
+    background-color: #f652e8; 
   }
   
-  /* Estilos adicionales para resaltar el último botón de cada fila */
-  button:nth-child(4n) {
-    border-top-right-radius: 50%; /* Hace que la esquina superior derecha sea redonda */
+  .button.sabias-que {
+    background-color: rgb(185, 155, 255); 
   }
+  
+  .button.buenas-noticias {
+    background-color: #1f92fe; 
+  }
+  
+  .button.hotel {
+    background-color: #f0054c; 
+  }
+  
+  .button.sabores {
+    background-color: #f00567; 
+  }
+
+  .button.salud {
+    background-color: #f005b5; 
+  }
+
+  .button.musica-cura {
+    background-color: #5f05f0; 
+  }
+
+
+
+
+  .botonera {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  
   
